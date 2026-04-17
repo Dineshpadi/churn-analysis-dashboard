@@ -1,6 +1,6 @@
 # Churn-Analysis-Dashboard
 
-![Image Failed to Load](assets/images/Churn_Analysis_Image.png)
+![Image Failed to Load](assets/images/Churn_Analysis_image.png)
 
 
 # Table of contents
@@ -185,7 +185,7 @@ GROUP BY contract, internet_service, payment_method
 ORDER BY churn_rate_percentage DESC;
 
 ```
-![Image Failed to Load](assets/images/Churn_Rate_by_Segment_Sol_1.png)
+![Image Failed to Load](assets/images/Churn_Rate_by_Segment_1.png)
 
 - How does churn vary by customer tenure groups (e.g., 0-6 months, 7-12 months, 1+ years)?
 ``` sql
@@ -209,7 +209,7 @@ GROUP BY tenure_group
 ORDER BY churn_rate_percentage DESC;
 
 ```
-![Image Failed to Load](assets/images/Churn_Rate_by_Tenure_Group_Sol_2.png)
+![Image Failed to Load](assets/images/Churn_Rate_by_Tenure_Group_2.png)
 
 - Which customer segments have the highest churn counts and rates?
 ``` sql
@@ -226,7 +226,7 @@ GROUP BY contract, internet_service, payment_method
 ORDER BY churn_rate_percentage DESC, total_customers DESC;
 
 ```
-![Image Failed to Load](assets/images/Churn_Rate_Rank_by_Segment_Sol_3.png)
+![Image Failed to Load](assets/images/Churn_Rate_Rank_by_Segment_3.png)
 
 - Can I calculate customer lifetime value (CLTV) or average revenue per user (ARPU) by segment?
 ``` sql
@@ -254,7 +254,7 @@ GROUP BY contract, internet_service, payment_method
 ORDER BY avg_cltv DESC;
 
 ```
-![Image Failed to Load](assets/images/CLTV_Sol_4.png)
+![Image Failed to Load](assets/images/Customer_Lifetime_Value_4.png)
 
 - What is the correlation between monthly charges and churn (using window functions or ranking)?
 ``` sql
@@ -285,7 +285,7 @@ GROUP BY charge_quartile, charge_level
 ORDER BY charge_quartile;
 
 ```
-![Image Failed to Load](assets/images/Monthly_Charges_and_Churn_Sol_5.png)
+![Image Failed to Load](assets/images/Monthly_Charges_and_Churn_5.png)
 
 - Which customers have multiple services and are they more or less likely to churn?
 ``` sql
@@ -330,7 +330,7 @@ GROUP BY service_tier
 ORDER BY churn_rate_percentage DESC;
 
 ```
-![Image Failed to Load](assets/images/Churn_Probability_Sol_6.png)
+![Image Failed to Load](assets/images/Churn_Probability_6.png)
 
 -  How many customers are churned versus active by region or demographic group?
 ``` sql
@@ -345,7 +345,7 @@ GROUP BY gender, senior_citizen, partner, dependents
 ORDER BY churn_rate_percentage DESC;
 
 ```
-![Image Failed to Load](assets/images/Churn_vs_Active_Sol_7.png)
+![Image Failed to Load](assets/images/Churn_vs_Active_7.png)
 
 - Can I generate datasets for “high-risk” customers based on churn probability thresholds?
 ``` sql
@@ -382,7 +382,7 @@ WHERE risk_score >= 4
 ORDER BY risk_score DESC, tenure_months;
 
 ```
-![Image Failed to Load](assets/images/High_Risk_Customers_Sol_8.png)
+![Image Failed to Load](assets/images/High_Risk_Customers_8.png)
 
 # DAX Calculations
 ## Core Measures
