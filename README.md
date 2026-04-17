@@ -254,7 +254,7 @@ GROUP BY contract, internet_service, payment_method
 ORDER BY avg_cltv DESC;
 
 ```
-![Image Failed to Load](assets/images/Customer Lifetime_Value_4.png)
+![Image Failed to Load](assets/images/Customer Lifetime Value_4.png)
 
 - What is the correlation between monthly charges and churn (using window functions or ranking)?
 ``` sql
